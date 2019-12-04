@@ -15,7 +15,7 @@
     <!--Mi resolucion de pantalla es 1500x720-->
     <noscript>Es posible que tu navegador no tenga soportado esta versión de Javascript o esté deshabilitado</noscript>
     <header>
-        <div id="titulo"><a href=""><img src="../images/logoWeb.png" alt="GameXperia" id="logo"></a><h1>GameXperia</h1></div>
+        <div id="titulo"><a href="../index.html"><img src="../images/logoWeb.png" alt="GameXperia" id="logo"></a><h1>GameXperia</h1></div>
         <div id="login">
             <canvas id="userIcon"></canvas>
             <h3>Guest#5372</h3>
@@ -81,15 +81,15 @@
             <h4>Por favor, rellene el siguiente formulario:</h4>
             <form id="formularioContacto" action="#">
                 <label for="nombre" class="label">Nombre(*):</label>
-                <input id="nombre" type="text" class="input" placeholder="Fulanito" minlength="3" maxlength="100" required />
+                <input id="nombre" type="text" class="inputObligatorio" placeholder="Fulanito" minlength="3" maxlength="100" required />
                 <label for="apellidos" class="label">Apellidos:</label>
                 <input id="apellidos" type="text" class="input" placeholder="De Copas" minlength="3" maxlength="100" />
                 <label for="email" class="label">E-mail(*):</label>
-                <input id="email" type="email" class="input" placeholder="example@gmail.com" required/>
+                <input id="email" type="email" class="inputObligatorio" placeholder="example@gmail.com" required/>
                 <label for="telefono" class="label">Teléfono:</label>
-                <input id="telefono" type="number" class="input" placeholder="610109191" />
+                <input id="telefono" type="number" class="input" placeholder="612345678" pattern="/^[9|6|7][0-9]{8}$/">
                 <label for="comentario" class="label">Comentario(*):</label>
-                <textarea id="comentario" class="input" rows="6" cols="35" placeholder="Escribe aquí..." required></textarea>
+                <textarea id="comentario" class="inputObligatorio" rows="6" cols="35" placeholder="Escribe aquí..." required></textarea>
                 <input type="submit" id="enviar">
             </form>
         </main>

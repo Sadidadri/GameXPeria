@@ -66,8 +66,14 @@ header{
 #infoPoliticas{
     display: flex;
 }
-.input{
+.input , .inputObligatorio{
     justify-self: start;
+}
+.input:invalid , .inputObligatorio:invalid{
+    background-color: lightsalmon;
+}
+.inputObligatorio:valid{
+    background-color: lightgreen;
 }
 .label{
     justify-self: end;
