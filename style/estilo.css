@@ -17,31 +17,36 @@
     padding: 0 50px;
 }
 #asideIzquierdo{
-    width:19%;
+    width:20%;
 }
 #asideDerecho{
-    width:19%;
+    width:20%;
 }
 .elementoMenuLateral{
     padding: 10px 0;
 }
 .enlaceNav, .elementoNav{
     padding: 10px 0;
+    
 }
 footer{
-    padding: 20px 0px 5px;
+    padding: 10px 0px 5px;
     display: flex;
     justify-content: space-around;
+    background-color:#5592a2;
 }
 header{
-    margin: 10px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
+    background-color: #b8f6ff;
 }
 .iconNav{
     width: 25px;
 }
 .imagenNoticia{
+    border: 2px solid black;
+    border-radius: 15px 10px 15px 10px;
     width: 100%;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -57,6 +62,8 @@ header{
 }
 .imagenRedesFooter:hover{
     transform: scale(1.15);
+    transition-duration: 1.5s;
+    transition-property: all;
 }
 #infoPoliticas{
     display: flex;
@@ -112,12 +119,18 @@ main{
     justify-content: space-around;
     
 }
+nav{
+    background-color: #f25a35;
+}
 #principal{
     display: flex;
+    background-color: #b8f6ff;
 }
 #publicidad{
     text-align: center;
+    
 }
+
 #redesSocialesAside{
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -135,6 +148,9 @@ svg{
 #titulo{
     display: flex;
     align-items: center;
+}
+#ultimosTweets{
+    padding: 10px;
 }
 ul > li > ul{
     display: none;
