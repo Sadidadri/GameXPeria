@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/estiloContacto.css">
+    <script src="../js/canvas.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <title>GameXperia</title>
+</head>
+<body>
+    <!--Mi resolucion de pantalla es 1500x720-->
+    <noscript>Es posible que tu navegador no tenga soportado esta versión de Javascript o esté deshabilitado</noscript>
+    <header>
+        <div id="titulo"><a href=""><img src="../images/logoWeb.png" alt="GameXperia" id="logo"></a><h1>GameXperia</h1></div>
+        <div id="login">
+            <canvas id="userIcon"></canvas>
+            <h3>Guest#5372</h3>
+            <div id="enlacesRegistro">
+                <a href="#" id="Registrarse">Registrarse</a>
+                <span>|</span>
+                <a href="#" id="Login">Login</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul id="menuNav">
+            <li class="elementoNav"><a class="enlaceNav" href="../index.html"><img src="../images/home.png" class="iconNav" alt="Home">Home</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="../images/nswitch.png" class="iconNav" alt="Nintendo Switch">Nintendo Switch</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="../images/ps4.png" class="iconNav" alt="PS4">PS4</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="../images/xbox.png" class="iconNav" alt="Xbox One">Xbox One</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="../images/pc.png" class="iconNav" alt="PC">PC</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="../pages/contacto.html"><img src="../images/contacto.png" class="iconNav" alt="Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="principal">
+        <aside id="asideIzquierdo">
+            <section id="menuArticulos">
+                <h3>Últimos Artículos</h3>
+                <ul id="menuLateral">
+                    <li class="elementoMenuLateral"><a href="#">2019</a>
+                        <ul>
+                           <li><a href="#">Diciembre 2019</a></li>
+                           <li><a href="#">Noviembre 2019</a></li> 
+                           <li><a href="#">Octubre 2019</a></li>  
+                        </ul>
+                    </li>
+                    <li class="elementoMenuLateral"><a href="#">2018</a>
+                        <ul>
+                            <li><a href="#">Noviembre 2018</a></li>
+                            <li><a href="#">Julio 2018</a></li> 
+                            <li><a href="#">Febrero 2018</a></li>   
+                        </ul>
+                    </li>
+                    <li class="elementoMenuLateral"><a href="#">2017</a></li>
+                    <li class="elementoMenuLateral"><a href="#">2016</a></li>
+                    <li class="elementoMenuLateral"><a href="#">2015</a></li>
+                </ul>
+            </section>
+            <section id="publicidad">
+                <svg>
+                    <defs>
+                        <radialGradient id="degradado" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                            <stop offset="0%" style="stop-color:rgb(250,248,245);
+                            stop-opacity:0" />
+                            <stop offset="100%" style="stop-color:rgb(168,167,163);stop-opacity:1" />
+                        </radialGradient>
+                    </defs>
+                    <rect width="100%" height="300" style="fill:url(#degradado);" />
+                    <text x="25%" y="50%" fill="#000" font-family="Verdana" font-size="25">
+                        PUBLICIDAD
+                    </text>
+                </svg>
+            </section>
+        </aside>
+        <main>
+            <h2>¿Quieres contactar con nosotros?</h2>
+            <h4>Por favor, rellene el siguiente formulario:</h4>
+            <form id="formularioContacto" action="#">
+                <label for="nombre" class="label">Nombre(*):</label>
+                <input id="nombre" type="text" class="input" placeholder="Fulanito" minlength="3" maxlength="100" required />
+                <label for="apellidos" class="label">Apellidos:</label>
+                <input id="apellidos" type="text" class="input" placeholder="De Copas" minlength="3" maxlength="100" />
+                <label for="email" class="label">E-mail(*):</label>
+                <input id="email" type="email" class="input" placeholder="example@gmail.com" required/>
+                <label for="telefono" class="label">Teléfono:</label>
+                <input id="telefono" type="number" class="input" placeholder="610109191" />
+                <label for="comentario" class="label">Comentario(*):</label>
+                <textarea id="comentario" class="input" rows="6" cols="35" placeholder="Escribe aquí..." required></textarea>
+                <input type="submit" id="enviar">
+            </form>
+        </main>
+        <aside id="asideDerecho">
+            <h3 id="siguenos">Síguenos:</h3>
+            <section id="redesSocialesAside">
+                <img src="../images/iconTw.png" alt="Twitter" class="imagenRedes">
+                <span class="nombreRedes">@GameXPeria</span>
+                <img src="../images/iconIn.png" alt="Instagram" class="imagenRedes">
+                <span class="nombreRedes">@GameXPeria</span>
+                <img src="../images/iconFB.png" alt="Facebook" class="imagenRedes">
+                <span class="nombreRedes">GameXPeria</span>
+                <img src="../images/iconYt.png" alt="Youtube" class="imagenRedes">
+                <span class="nombreRedes">GameXPeria RV</span>
+            </section>
+            <section id="ultimosTweets">
+                <a class="twitter-timeline" data-height="250" data-theme="light" data-link-color="#F5F8FA" href="https://twitter.com/XSadidAdriX?ref_src=twsrc%5Etfw">Tweets by XSadidAdriX</a> 
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <div id="infoPoliticas">
+            <a href="#" class="aPie">Autor</a>
+            <a href="#" class="aPie">Ley de Protección de Datos</a>
+            <a href="#" class="aPie">Política de Cookies</a>
+        </div>
+        <div id="RedesFooter">
+            <img src="../images/iconTw.png" alt="Twitter" class="imagenRedesFooter">
+            <img src="../images/iconIn.png" alt="Instagram" class="imagenRedesFooter">
+            <img src="../images/iconFB.png" alt="Facebook" class="imagenRedesFooter">
+            <img src="../images/iconYt.png" alt="Youtube" class="imagenRedesFooter">
+        </div>
+    </footer>
+</body>
+</html>
