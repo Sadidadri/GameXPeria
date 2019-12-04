@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="style/estilo.css">
     <script src="js/canvas.js"></script>
     <script src="js/leerMas.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <title>GameXperia</title>
 </head>
 <body>
+    <!--Mi resolucion de pantalla es 1500x720-->
     <noscript>Es posible que tu navegador no tenga soportado esta versión de Javascript o esté deshabilitado</noscript>
     <header>
-        <div id="titulo"><img src="images/logoWeb.png" alt="GameXperia" id="logo"><h1>GameXperia</h1></div>
+        <div id="titulo"><a href=""><img src="images/logoWeb.png" alt="GameXperia" id="logo"></a><h1>GameXperia</h1></div>
         <div id="login">
             <canvas id="userIcon"></canvas>
             <h3>Guest#5372</h3>
@@ -27,67 +29,77 @@
     </header>
     <nav>
         <ul id="menuNav">
-            <li class="elementoNav"><a href="#">Home</a></li>
-            <li class="elementoNav"><a href="#">Nintendo Switch</a></li>
-            <li class="elementoNav"><a href="#">PS4</a></li>
-            <li class="elementoNav"><a href="#">Xbox One</a></li>
-            <li class="elementoNav"><a href="#">PC</a></li>
-            <li class="elementoNav"><a href="#">Contacto</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="images/home.png" class="iconNav" alt="Home">Home</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="images/nswitch.png" class="iconNav" alt="Nintendo Switch">Nintendo Switch</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="images/ps4.png" class="iconNav" alt="PS4">PS4</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="images/xbox.png" class="iconNav" alt="Xbox One">Xbox One</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="images/pc.png" class="iconNav" alt="PC">PC</a></li>
+            <li class="elementoNav"><a class="enlaceNav" href="#"><img src="images/contacto.png" class="iconNav" alt="Contacto">Contacto</a></li>
         </ul>
     </nav>
     <div id="principal">
         <aside id="asideIzquierdo">
-            <div id="menuArticulos">
+            <section id="menuArticulos">
                 <h3>Últimos Artículos</h3>
                 <ul id="menuLateral">
-                    <li class="elementoMenuLateral"><a href="#">2019</a></li>
-                    <li class="elementoMenuLateral"><a href="#">2018</a></li>
+                    <li class="elementoMenuLateral"><a href="#">2019</a>
+                        <ul>
+                           <li><a href="#">Diciembre 2019</a></li>
+                           <li><a href="#">Noviembre 2019</a></li> 
+                           <li><a href="#">Octubre 2019</a></li>  
+                        </ul>
+                    </li>
+                    <li class="elementoMenuLateral"><a href="#">2018</a>
+                        <ul>
+                            <li><a href="#">Noviembre 2018</a></li>
+                            <li><a href="#">Julio 2018</a></li> 
+                            <li><a href="#">Febrero 2018</a></li>   
+                        </ul>
+                    </li>
                     <li class="elementoMenuLateral"><a href="#">2017</a></li>
                     <li class="elementoMenuLateral"><a href="#">2016</a></li>
                     <li class="elementoMenuLateral"><a href="#">2015</a></li>
                 </ul>
-            </div>
-            <div id="publicidad">
+            </section>
+            <section id="publicidad">
                 <svg>
                     <rect width="100%" height="300" style="fill:rgb(250,248,245);stroke-width:10;stroke:rgb(168,167,163)" />
-                    <text x="15%" y="50%" fill="rgb(168,167,163)" font-family="Verdana" font-size="25">
+                    <text x="20%" y="50%" fill="rgb(168,167,163)" font-family="Verdana" font-size="25">
                         PUBLICIDAD
                     </text>
                 </svg>
                 
-            </div>
+            </section>
         </aside>
         <main>
-            <section>
-                <article class="articulo">
-                    <img src="images/deathStranding.jpg" alt="Noticia" class="imagenNoticia">
-                    <h2>Kojima asegura que ni él entiende Death Stranding</h3>
-                    <p id="contenidoNoticia1">Kojima ha dado muchas entrevistas desde que se dedica a la industria de los videojuegos. Desde luego, es una de esas personalidades que, o bien te gustan mucho o bien no te gustan nada. En cualquier caso, su próximo juego (Death Stranding) está en boca de todos. Y no solo por las expectativas que ha creado desde su anuncio, sino también por saber realmente qué nos va a ofrecer. Muchos parecen no entender nada, y ahora resulta que Kojima tampoco. <br/><a href="#" class="leerMas">Leer más...</a><span class="textoOculto">En cualquier caso, de alguna forma sí que podríamos decir que se trata del juego más personal de Hideo Kojima. No en vano, es la primera vez que actúa como CEO en un juego. Quizás por eso se ha permitido el tomar algo más de riesgo que cuando estaba bajo la tutela de Konami. Al menos no tardaremos mucho en salir de dudas. Recordad que Death Stranding tiene previsto su lanzamiento para el próximo 8 de noviembre de 2019. Será en exclusiva para PS4. ¿Habrá preparado Kojima una forma de bautizar el supuesto nuevo género?</span></p>
-                </article>
-                <article class="articulo">
-                    <img src="images/cod.jpg" alt="Noticia" class="imagenNoticia">
-                        <h2>La comunidad de Call of Duty: Modern Warfare teoriza con el regreso de un villano de la saga</h3>
-                        <p id="contenidoNoticia1">Si bien Call of Duty es una franquicia que, a lo largo de los años, se ha caracterizado por múltiples motivos, los antagonistas suelen ser un pilar en sus respectivas historias. Pensar en las subdivisiones Modern Warfare y Black Ops, cuyas propuestas contaron con mayor énfasis narrativos que sus predecesores enumerados, era pensar en sus villanos, quienes gozaban de gran carisma. Así, de cara a Call of Duty: Modern Warfare, se espera que la presencia de una figura rival de calidad se repita y, tras el último tráiler del videojuego, se teoriza que podría ser una persona ya conocida.<br/><a href="#" class="leerMas">Leer más...</a><span class="textoOculto">En tal sentido, en los últimos compases del vídeo en cuestión es posible apreciar una silueta no inteligible que dispara a quemarropa a un soldado caído. Teniendo en consideración que Infinity Ward y Activision se tomaron la molestia de ocultar su identidad, los usuarios han comenzado a establecer hipótesis y conexiones respecto a quién podría ser, arrojando diversos nombres por razones diferentes.
+            <article class="articulo">
+                <img src="images/deathStranding.jpg" alt="Noticia" class="imagenNoticia">
+                <h2>Kojima asegura que ni él entiende Death Stranding</h3>
+                <p id="contenidoNoticia1">Kojima ha dado muchas entrevistas desde que se dedica a la industria de los videojuegos. Desde luego, es una de esas personalidades que, o bien te gustan mucho o bien no te gustan nada. En cualquier caso, su próximo juego (Death Stranding) está en boca de todos. Y no solo por las expectativas que ha creado desde su anuncio, sino también por saber realmente qué nos va a ofrecer. Muchos parecen no entender nada, y ahora resulta que Kojima tampoco. <br/><a href="#" class="leerMas">Leer más...</a><span class="textoOculto">En cualquier caso, de alguna forma sí que podríamos decir que se trata del juego más personal de Hideo Kojima. No en vano, es la primera vez que actúa como CEO en un juego. Quizás por eso se ha permitido el tomar algo más de riesgo que cuando estaba bajo la tutela de Konami. Al menos no tardaremos mucho en salir de dudas. Recordad que Death Stranding tiene previsto su lanzamiento para el próximo 8 de noviembre de 2019. Será en exclusiva para PS4. ¿Habrá preparado Kojima una forma de bautizar el supuesto nuevo género?</span></p>
+            </article>
+            <article class="articulo">
+                <img src="images/cod.jpg" alt="Noticia" class="imagenNoticia">
+                    <h2>La comunidad de Call of Duty: Modern Warfare teoriza con el regreso de un villano de la saga</h3>
+                    <p id="contenidoNoticia1">Si bien Call of Duty es una franquicia que, a lo largo de los años, se ha caracterizado por múltiples motivos, los antagonistas suelen ser un pilar en sus respectivas historias. Pensar en las subdivisiones Modern Warfare y Black Ops, cuyas propuestas contaron con mayor énfasis narrativos que sus predecesores enumerados, era pensar en sus villanos, quienes gozaban de gran carisma. Así, de cara a Call of Duty: Modern Warfare, se espera que la presencia de una figura rival de calidad se repita y, tras el último tráiler del videojuego, se teoriza que podría ser una persona ya conocida.<br/><a href="#" class="leerMas">Leer más...</a><span class="textoOculto">En tal sentido, en los últimos compases del vídeo en cuestión es posible apreciar una silueta no inteligible que dispara a quemarropa a un soldado caído. Teniendo en consideración que Infinity Ward y Activision se tomaron la molestia de ocultar su identidad, los usuarios han comenzado a establecer hipótesis y conexiones respecto a quién podría ser, arrojando diversos nombres por razones diferentes.
 
-                            Así, primeramente, surgió el nombre del Teniente Shepard, antagonista de Modern Warfare 2, por las similitudes que existen respecto a la escena de dicho videojuego en un momento dado de su campaña. No obstante, la utilización de una Desert Eagle y no de una Magnum, como sucedió en el caso resaltado, viró las vistas hacia Imran Zakhaev y Vladimir Makarov, antagonistas del Modern Warfare original y de Modern Warfare 3, respectivamente, pero el primero tiene un solo brazo y su apariencia, realmente, guarda más reminiscencias con Khaled Al-Asad, también antagonista del primer Modern Warfare.Evidentemente, es imperativo recordar que Call of Duty: Modern Warfare es el reboot de la propiedad intelectual, por lo que ello daría más relevancia a Zakhaev pues este, teóricamente, no habría tenido su encuentro con el Capitán Price, quien fue el encargado de cortarle el brazo y, en los tráileres, se ve definitivamente más joven. Aun así, son solo suposiciones, por lo que hemos de esperar al 25 de octubre en aras de ver qué nos depara esta ansiada producción para los jugadores de PC, Xbox One y PlayStation 4.</span></p>
-                    </article>
-            </section>
+                        Así, primeramente, surgió el nombre del Teniente Shepard, antagonista de Modern Warfare 2, por las similitudes que existen respecto a la escena de dicho videojuego en un momento dado de su campaña. No obstante, la utilización de una Desert Eagle y no de una Magnum, como sucedió en el caso resaltado, viró las vistas hacia Imran Zakhaev y Vladimir Makarov, antagonistas del Modern Warfare original y de Modern Warfare 3, respectivamente, pero el primero tiene un solo brazo y su apariencia, realmente, guarda más reminiscencias con Khaled Al-Asad, también antagonista del primer Modern Warfare.Evidentemente, es imperativo recordar que Call of Duty: Modern Warfare es el reboot de la propiedad intelectual, por lo que ello daría más relevancia a Zakhaev pues este, teóricamente, no habría tenido su encuentro con el Capitán Price, quien fue el encargado de cortarle el brazo y, en los tráileres, se ve definitivamente más joven. Aun así, son solo suposiciones, por lo que hemos de esperar al 25 de octubre en aras de ver qué nos depara esta ansiada producción para los jugadores de PC, Xbox One y PlayStation 4.</span></p>
+            </article>
         </main>
         <aside id="asideDerecho">
             <h3 id="siguenos">Síguenos:</h3>
-            <div id="redesSocialesAside">
+            <section id="redesSocialesAside">
                 <img src="images/iconTw.png" alt="Twitter" class="imagenRedes">
-                <span>Twitter</span>
+                <span class="nombreRedes">@GameXPeria</span>
                 <img src="images/iconIn.png" alt="Instagram" class="imagenRedes">
-                <span>Instagram</span>
+                <span class="nombreRedes">@GameXPeria</span>
                 <img src="images/iconFB.png" alt="Facebook" class="imagenRedes">
-                <span>Facebook</span>
+                <span class="nombreRedes">GameXPeria</span>
                 <img src="images/iconYt.png" alt="Youtube" class="imagenRedes">
-                <span>Youtube</span>
-            </div>
-            <div id="ultimosTweets">
-                <a class="twitter-timeline" data-height="250" data-theme="light" data-link-color="#F5F8FA" href="https://twitter.com/XSadidAdriX?ref_src=twsrc%5Etfw">Tweets by XSadidAdriX</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
+                <span class="nombreRedes">GameXPeria RV</span>
+            </section>
+            <section id="ultimosTweets">
+                <a class="twitter-timeline" data-height="250" data-theme="light" data-link-color="#F5F8FA" href="https://twitter.com/XSadidAdriX?ref_src=twsrc%5Etfw">Tweets by XSadidAdriX</a> 
+            </section>
         </aside>
     </div>
     <footer>

@@ -10,7 +10,8 @@
     margin: 10px 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 7fr;
+    column-gap: 10px;
+    row-gap: 5px;
 }
 .aPie{
     padding: 0 50px;
@@ -21,10 +22,10 @@
 #asideDerecho{
     width:19%;
 }
-.elementoNav{
-    padding: 20px 0;
-}
 .elementoMenuLateral{
+    padding: 10px 0;
+}
+.enlaceNav, .elementoNav{
     padding: 10px 0;
 }
 footer{
@@ -36,6 +37,9 @@ header{
     margin: 10px;
     display: flex;
     justify-content: space-between;
+}
+.iconNav{
+    width: 25px;
 }
 .imagenNoticia{
     width: 100%;
@@ -65,6 +69,34 @@ header{
 
 }
 #logo{
+    width: 100px;
+    animation: bounceIn 0.75s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    cursor: pointer;
+}
+@keyframes bounceIn {
+    0% {
+      opacity: 1;
+      transform: scale(.3);
+    } 
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    } 
+
+    70% {
+    opacity: 1;
+    transform: scale(.9);
+    }
+
+    100% {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
+#logo{
     width: 150px;
     height: 150px;
 }
@@ -78,6 +110,7 @@ main{
 #menuNav{
     display: flex;
     justify-content: space-around;
+    
 }
 #principal{
     display: flex;
@@ -103,7 +136,14 @@ svg{
     display: flex;
     align-items: center;
 }
-
+ul > li > ul{
+    display: none;
+}
+ul > li:hover > ul{
+    display: block;
+    position: relative;
+    left: 10px;
+}
 #userIcon{
     width:150px;
     height: 100px;
