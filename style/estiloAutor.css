@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+#about{
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+.aPie{
+    padding: 0 50px;
+}
+#asideIzquierdo{
+    width:20%;
+}
+#asideDerecho{
+    width:20%;
+}
+.elementoMenuLateral{
+    padding: 10px 0;
+}
+.enlaceNav, .elementoNav{
+    padding: 10px 0;
+    
+}
+#enviar{
+    width: 50px;
+    grid-column-start: 2;
+}
+footer{
+    padding: 10px 0px 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#5592a2;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #b8f6ff;
+}
+.iconNav{
+    width: 25px;
+}
+.imagenRedes{
+    width: 40%;
+}
+.imagenRedes:hover{
+    transform: scale(1.1);
+}
+.imagenRedesFooter{
+    width: 25px;
+}
+.imagenRedesFooter:hover{
+    transform: scale(1.15);
+    transition-duration: 1.5s;
+    transition-property: all;
+}
+#infoPoliticas{
+    display: flex;
+}
+
+
+#login{
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}
+#logo{
+    width: 100px;
+    animation: popeo 0.75s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    cursor: pointer;
+}
+@keyframes popeo {
+    0% {
+      opacity: 1;
+      transform: scale(.3);
+    } 
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    } 
+
+    70% {
+    opacity: 1;
+    transform: scale(.9);
+    }
+
+    100% {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+}
+main{
+    padding: 15px;
+    width:60%;
+    text-align: center;
+}
+#menuArticulos, #siguenos{
+    margin: 10px;
+    padding: 10px;
+}
+#menuNav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav{
+    background-color: #f25a35;
+}
+p{
+    text-align: start;
+    margin: 0 10px;
+}
+#perfil{
+    width: 150px;
+}
+#principal{
+    display: flex;
+    background-color: #b8f6ff;
+}
+#publicidad{
+    text-align: center;
+    
+}
+
+#redesSocialesAside{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+svg{
+    width: 85%;
+    min-height: 300px;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+}
+#ultimosTweets{
+    padding: 10px;
+}
+ul > li > ul{
+    display: none;
+}
+ul > li:hover > ul{
+    display: block;
+    position: relative;
+    left: 10px;
+}
+#userIcon{
+    width:150px;
+    height: 100px;
+    grid-row: span 2;
+}

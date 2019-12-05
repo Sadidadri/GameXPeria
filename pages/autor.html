@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/estiloContacto.css">
+    <link rel="stylesheet" href="../style/estiloAutor.css">
     <script src="../js/canvas.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <title>GameXperia</title>
@@ -77,21 +77,15 @@
             </section>
         </aside>
         <main>
-            <h2>¿Quieres contactar con nosotros?</h2>
-            <h4>Por favor, rellene el siguiente formulario:</h4>
-            <form id="formularioContacto" action="#">
-                <label for="nombre" class="label">Nombre(*):</label>
-                <input id="nombre" type="text" class="inputObligatorio" placeholder="Fulanito" minlength="3" maxlength="100" required />
-                <label for="apellidos" class="label">Apellidos:</label>
-                <input id="apellidos" type="text" class="input" placeholder="De Copas" minlength="3" maxlength="100" />
-                <label for="email" class="label">E-mail(*):</label>
-                <input id="email" type="email" class="inputObligatorio" placeholder="example@gmail.com" required/>
-                <label for="telefono" class="label">Teléfono:</label>
-                <input id="telefono" type="number" class="input" placeholder="612345678" pattern="/^[9|6|7][0-9]{8}$/">
-                <label for="comentario" class="label">Comentario(*):</label>
-                <textarea id="comentario" class="inputObligatorio" rows="6" cols="35" placeholder="Escribe aquí..." required></textarea>
-                <input type="submit" id="enviar">
-            </form>
+            <h2>Sobre mí:</h2>
+            <div id="about">
+                <img src="../images/profile.jpg" alt="profile" id="perfil" />
+                <p>¡Hola! Soy Adrián Ángel Moya Moruno, actualmente estudio Desarrollo de Aplicaciones Web en el IES Gran Capitán (Córdoba).<br/>
+                    GameXperia es un proyecto que fue creado en 2019 para traeros las últimas noticias del sector de los videojuegos. Nuestra comunidad está formada por un grupo de profesionales del sector de la prensa y el desarrollo de videojuegos.<br/>
+                    Si quieres formar parte de la comunidad, puedes contactar con nosotros por medio de nuestro apartado de <a href="contacto.html">Contacto</a>.<br/>
+                    
+                </p>
+            </div>
         </main>
         <aside id="asideDerecho">
             <h3 id="siguenos">Síguenos:</h3>
@@ -112,7 +106,7 @@
     </div>
     <footer>
         <div id="infoPoliticas">
-            <a href="autor.html" class="aPie">Autor</a>
+            <a href="#" class="aPie">Autor</a>
             <a href="#" class="aPie">Ley de Protección de Datos</a>
             <a href="#" class="aPie">Política de Cookies</a>
         </div>
