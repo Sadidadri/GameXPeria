@@ -1,4 +1,6 @@
 # Practica10
+Adrian Moya Moruno Link: https://iesgrancapitan-diw.github.io/practica10-diw-Sadidadri/
+Wireframe: https://wireframe.cc/KCue4z
 
 Práctica 10 - DIW
 
